@@ -1,0 +1,728 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin:0 ;
+}
+#sideNav,#menuBtn{
+    display: none;
+}
+html{
+    height: 140%;
+}
+body{
+    font-family: sans-serif;
+    background-image: url("../assets/images/back.webp");
+    background-position: center;
+    background-size: cover;
+    background-position-y: 100%;
+    height: 100%;
+    flex-direction: column;
+    display: flex;
+}
+
+#menubar{
+    position: fixed;
+    background:#fff;
+    text-align: center;
+    width:100%;
+    box-shadow:2px 5px #8888885b;
+}
+
+#menubar ul{
+    display: inline-flex;
+    list-style: none;
+}
+#menubar ul li{ 
+    margin: 15px;
+    padding: 15px;
+
+}
+#menubar ul li a{
+    color:#5a5a5a;
+    text-decoration: none;
+}
+#home:hover{
+    background:rgb(241, 17, 148);
+    border-radius: 4px;
+}
+#home:hover a{
+    color:#fff;
+}
+
+#menubar .fa{
+    margin-right: 8px;
+}   
+                                        /* sub menu of cbse */
+.sub-menu-1{
+    display: none;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+#cbse:hover{
+    background:rgb(255, 251, 21);
+    border-radius: 1px;
+}
+
+#cbse:hover a{
+    color: black;
+}
+
+#cbse ul li a{
+    text-decoration: none;
+     color:black;  /* iska kuch fyda ni h vaise */
+}
+#cbse:hover .sub-menu-1{
+    display: flex;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.849);
+    border:5px solid yellow;
+    margin-top: 15px;
+    margin-left: -15px;
+}
+#cbse:hover .sub-menu-1 ul{
+    display:block;
+    margin :0;
+}
+#cbse:hover .sub-menu-1 ul li{
+    padding: 12px;
+    border-bottom: 1px solid yellow;
+    text-align: left;
+}
+#cbse:hover .sub-menu-1 ul li:last-child{
+    border-bottom: none;
+}
+#cbse ul li:hover{
+    background: yellow;
+    border-radius: 4px;
+}
+#cbse ul li:hover a{
+    color:black;
+}
+                                         /* sub menu of icse */
+                                      
+.sub-menu-2{
+    display: none;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+#icse:hover{
+    background: rgb(19, 74, 255);
+    border-radius: 1px;
+}
+#icse:hover #icse-heading{
+    color: #fff;
+}
+#icse ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+#icse:hover .sub-menu-2{
+    display: flex;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.849);
+    border:5px solid rgb(19, 74, 255);
+    margin-top: 15px;
+    margin-left: -15px;
+}
+#icse:hover .sub-menu-2 ul{
+    display:block;
+    margin :0;
+}
+#icse:hover .sub-menu-2 ul li{
+    padding: 12px;
+    border-bottom: 1px dotted rgb(19, 74, 255);
+    text-align: left;
+}
+#icse:hover .sub-menu-2 ul li:last-child{
+    border-bottom: none;
+}
+#icse ul li:hover{
+    background: rgb(19, 74, 255);
+    border-radius: 4px;
+}
+#icse ul li:hover a{
+    color:#fff;
+}
+
+                              /* sub menu of tamil nadu */
+ 
+.sub-menu-3{
+    display: none;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+#tamil:hover{
+    background: purple;
+    border-radius: 1px;
+}
+#tamil:hover #tamil-heading{
+    color: #fff;
+}
+
+#tamil ul li a{
+    text-decoration: none;
+    color:black;
+}
+#tamil:hover .sub-menu-3{
+    display: flex;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.849);
+    border:5px solid purple;
+    margin-top: 15px;
+    margin-left: -15px;
+}
+#tamil:hover .sub-menu-3 ul{
+    display:block;
+    margin :0;
+}
+#tamil:hover .sub-menu-3 ul li{
+    padding: 12px;
+    border-bottom: 1px dotted purple;
+    text-align: left;
+}
+#tamil:hover .sub-menu-3 ul li:last-child{
+    border-bottom: none;
+}
+#tamil ul li:hover{
+    background: purple;
+    border-radius: 4px;
+}
+#tamil ul li:hover a{
+    color:#fff;
+}
+
+           /* sub menu of karnataka */
+        
+.sub-menu-4{
+    display: none;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+#karnataka:hover{
+    background: orangered;
+    border-radius: 1px;
+}
+#karnataka:hover #karnataka-heading{
+ color: #fff;
+}
+#karnataka ul li a{
+    text-decoration: none;
+    color:black;
+}
+#karnataka:hover .sub-menu-4{
+    display: flex;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.849);
+    border: 5px solid orangered;
+    margin-top: 15px;
+    margin-left: -15px;
+}
+#karnataka:hover .sub-menu-4 ul{
+    display:block;
+    margin :0;
+}
+#karnataka:hover .sub-menu-4 ul li{
+    padding: 12px;
+    border-bottom: 1px dotted orangered;
+    text-align: left;
+}
+#karnataka:hover .sub-menu-4 ul li:last-child{
+    border-bottom: none;
+}
+#karnataka ul li:hover{
+    background: orangered;
+    border-radius: 4px;
+}
+#karnataka ul li:hover a{
+    color:#fff;
+}
+                              
+/* sub menu of kerela */
+
+.sub-menu-5{
+    display: none;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+#kerela:hover{
+    background: brown;
+}
+#kerela:hover #kerela-heading{
+    color: #fff;
+}
+#kerela ul li a{
+    text-decoration: none;
+    color:black;
+}
+#kerela:hover .sub-menu-5{
+    display: flex;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.849);
+    border: 5px solid brown;
+    margin-top: 15px;
+    margin-left: -15px;
+}
+#kerela:hover .sub-menu-5 ul{
+    display:block;
+    margin :0;
+}
+#kerela:hover .sub-menu-5 ul li{
+    padding: 12px;
+    border-bottom: 1px dotted brown;
+    text-align: left;
+}
+#kerela:hover .sub-menu-5 ul li:last-child{
+    border-bottom: none;
+}
+#kerela ul li:hover{
+    background: brown;
+    border-radius: 4px;
+}
+#kerela ul li:hover a{
+    color:#fff;
+}
+
+/* sub menu of ncert */
+
+.sub-menu-6{
+    display: none;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+#ncert:hover{
+    background: green;
+}
+#ncert:hover #ncert-heading{
+    color: #fff;
+}
+
+#ncert ul li a{
+    text-decoration: none;
+    color:black;
+}
+#ncert:hover .sub-menu-6{
+    display: flex;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.849);
+    border: 5px solid green;
+    margin-top: 15px;
+    margin-left: -15px;
+}
+#ncert:hover .sub-menu-6 ul{
+    display:block;
+    margin :0;
+}
+#ncert:hover .sub-menu-6 ul li{
+    padding: 12px;
+    border-bottom: 1px dotte green;
+    text-align: left;
+}
+#ncert:hover .sub-menu-6 ul li:last-child{
+    border-bottom: none;
+}
+#ncert ul li:hover{
+    background: green;
+    border-radius: 4px;
+}
+#ncert ul li:hover a{
+    color:#fff;
+}
+
+/* sub menu of entrance */
+
+.sub-menu-7{
+    display: none;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+#entrance:hover{
+    background: red;
+}
+#entrance:hover #entrance-heading{
+    color: #fff;
+}
+#entrance ul li a{
+    text-decoration: none;
+    color:black;
+}
+#entrance:hover .sub-menu-7{
+    display: flex;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.849);
+    border:5px solid red;
+    margin-top: 15px;
+    margin-left: -15px;
+    width: 176px;
+}
+#entrance:hover .sub-menu-7 ul{
+    display:block;
+    margin :0;
+}
+#entrance:hover .sub-menu-7 ul li{
+    padding: 12px;
+    border-bottom: 1px dotted red;
+    text-align: left;
+}
+#entrance:hover .sub-menu-7 ul li:last-child{
+    border-bottom: none;
+}
+#entrance ul li:hover{
+    background: red;
+    border-radius: 4px;
+}
+#entrance ul li:hover a{
+    color:#fff;
+}
+                                  /* footer */
+
+#footer{
+    background-image: url("../assets/images/white.webp");
+    background-position: center;
+    background-size: cover;
+    padding: 50px 0 30px;
+    margin-top: auto; 
+}
+hr{
+    width: 100%;
+    border: 0;
+    border-top: 1px solid #f67c92;
+}
+
+.footer-row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.footer-left-col{
+    flex-basis: 50%;
+    margin-top: 60px;
+    margin-left: 35px;
+
+}
+.footer-right-col{
+    flex-basis: 35%;
+    
+    margin-right: 35px;
+}
+
+.footer-links{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.link-title h4{
+    color: #ff6186;
+    margin-bottom: 20px;
+}
+.link-title small{
+    font-size: 13px;
+    color:#777;
+}
+
+.footer-info{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.footer-logo img{
+    margin-top: 10px;
+    width: 90px;
+}
+.footer-logo button{
+    padding: 12px 38px;
+    margin-top: 20px;
+    font-size: 10px;
+}
+
+.copyright-text,.footer-logo{
+    flex-basis: 40%;
+}
+
+                       /* SOCIAL ICONS */
+                 
+.social-icons{
+    width: 50px;
+    position: fixed;
+    top: 50%;
+    left: 0%;
+    transform: translateY(-50%);
+    z-index: 1;
+
+}                       
+.social-icons img{
+    display: block;
+    width: 20px;
+    margin: 0 auto 20px;
+    cursor: pointer;
+}
+
+
+@keyframes icon{
+    0%{transform: rotateY(0deg);}
+    50% {transform: rotateY(180deg);}
+    100%{transform: rotateY(360deg);}
+}
+#img1:hover,#img2:hover,#img3:hover,#img4:hover{
+    animation-name: icon;
+    animation-duration: 1s;
+}
+
+                                                         /* for small devices */
+
+@media only screen and (max-width :770px){
+   html{
+       height: 140%;
+   }
+   
+    .social-icons img{
+        width: 14px;
+        margin: 15 auto;
+    }
+
+    /* menubar */
+    #menubar{
+        display: none;
+    }
+    #myBtn{
+        position: fixed;
+        margin-top: 28px;
+        margin-left: 15px;
+        background: #fff;
+        border:2px solid #f67c92;
+        text-align: center;
+        width:70px;
+        height: 38px;
+    }
+     #myBtn a{
+        text-decoration: none;
+        color: #797979;
+        font-weight: bold;
+     }
+     #home .fa{
+         margin-right:3px ;
+     }
+    #menuBtn{
+        display: flex;
+        width: 40px;
+        position: fixed;
+        right:35px;
+        top: 28px;
+        z-index:2;
+        cursor: pointer;
+    }
+    #sideNav{
+        display: flex;
+        width: 235px;
+        height: 100vh;
+        position: fixed;
+        right: -235px;
+        top: 0;
+        background:rgba(255, 255, 255, 0.932);
+        z-index:2;
+        transition: .5s;
+    }
+    #sideNav{
+        overflow-y: scroll;
+    }
+    
+    #sideNav .fa{
+        margin-right: 5px;
+    }   
+    nav ul li{
+        list-style: none;
+        margin: 50px 20px;
+    }
+    nav ul li a{
+        text-decoration: none;
+        color:#797979;
+        font-weight: bold;
+    }
+
+    body{
+        background-image: url("../assets/images/mobile.webp");
+        background-position: center;
+        background-size: cover;
+        height: 170%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* arranging cbse submenu */
+
+    #cbse{
+        max-width:70px;
+    }
+    #cbse:hover{
+        border:2px solid yellow;
+    }
+    #cbse:hover .sub-menu-1{
+        display: flex;
+        position: absolute;
+        background-color: rgb(255, 255, 255);
+        border:2px solid yellow;
+        margin-top: 0px;
+        margin-left: -15px;
+    }
+    .column-sub-menu-1 ul li{
+        height:35px;
+        font-size:x-small;
+        font-weight: bold;
+        max-width:75px;
+    }
+
+    /* arranging icse submenu */
+    #icse{
+        max-width:65px;
+    }
+    #icse:hover{
+        border: 2px solid rgb(19, 74, 255);
+    }
+    #icse:hover .sub-menu-2{
+        display: flex;
+        position: absolute;
+        background-color: rgb(255, 255, 255);
+        border:2px solid rgb(19, 74, 255);
+        margin-top: 0px;
+        margin-left: -15px;
+    }
+    .column-sub-menu-2 ul li{
+        height:35px;
+        font-size:x-small;
+        font-weight: bold;
+        max-width:75px;
+    }
+
+     /* arranging tamil submenu */
+     #tamil{
+        max-width:110px;
+    }
+    #tamil:hover{
+        border: 2px solid purple;
+    }
+    #tamil:hover .sub-menu-3{
+        display: flex;
+        position: absolute;
+        background-color: rgb(255, 255, 255);
+        border:2px solid purple;
+        margin-top: 0px;
+        margin-left: -15px;
+    }
+    .column-sub-menu-3 ul li{
+        height:35px;
+        font-size:x-small;
+        font-weight: bold;
+        max-width:75px;
+    }
+
+    /* arranging karnataka submenu */
+    #karnataka{
+        max-width:110px;
+    }
+    #karnataka:hover{
+        border: 2px solid orangered;
+    }
+    #karnataka:hover .sub-menu-4{
+        display: flex;
+        position: absolute;
+        background-color: rgb(255, 255, 255);
+        border:2px solid orangered;
+        margin-top: 0px;
+        margin-left: -15px;
+    }
+    .column-sub-menu-4 ul li{
+        height:35px;
+        font-size:x-small;
+        font-weight: bold;
+        max-width:75px;
+    }
+
+    /* arranging kerela submenu */
+    #kerela{
+        max-width:80px;
+    }
+    #kerela:hover{
+        border: 2px solid brown;
+    }
+    #kerela:hover .sub-menu-5{
+        display: flex;
+        position: absolute;
+        background-color: rgb(255, 255, 255);
+        border:2px solid brown;
+        margin-top: 0px;
+        margin-left: -15px;
+    }
+    .column-sub-menu-5 ul li{
+        height:35px;
+        font-size:x-small;
+        font-weight: bold;
+        max-width:75px;
+    }
+
+    /* arranging ncert submenu */
+    #ncert{
+        max-width:170px;
+    }
+    #ncert:hover{
+        border: 2px solid green;
+    }
+    #ncert:hover .sub-menu-6{
+        display: flex;
+        position: absolute;
+        background-color: rgb(255, 255, 255);
+        border:2px solid green;
+        margin-top: 0px;
+        margin-left: -15px;
+    }
+    .column-sub-menu-6 ul li{
+        height:35px;
+        font-size:x-small;
+        font-weight: bold;
+        max-width:75px;
+    }
+
+    /* arranging entrance submenu */
+    #entrance{
+        max-width:160px;
+    }
+    #entrance:hover{
+        border: 2px solid red;
+    }
+    #entrance:hover .sub-menu-7{
+        display: flex;
+        position: absolute;
+        background-color: rgb(255, 255, 255);
+        border:2px solid red;
+        margin-top: 0px;
+        margin-left: -2px;
+        width : 154px;
+    }
+    .column-sub-menu-7 ul li{
+        height:35px;
+        font-size:x-small;
+        font-weight: bolder;
+        max-width:75px;
+    }
+
+    /* footer */
+    footer{
+        margin-top: auto; 
+    }
+    .footer-info{
+        margin-top: 5px;
+        margin-left: 25px; 
+        font-weight: bold;
+    }
+
+    .footer-left-col,.footer-right-col{
+        flex-basis: 100%;
+    }
+    .link-title{
+        flex-basis: 50%;
+        margin-bottom: 30px;
+    }
+}
+
